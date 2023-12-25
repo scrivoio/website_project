@@ -1,5 +1,20 @@
 .projects {
     margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.projects__col {
+    width: calc(50% - 12px);
+}
+
+.projects__header {
+    width: calc(50% - 24px);
+}
+
+.projects__header_full {
+    width: 100%;
 }
 
 .projects__title {
@@ -21,6 +36,18 @@
     width: calc(50% - 12px);
 }
 
+.projects__item_static {
+    transform: translateY(0) !important;
+}
+
+.projects__item:nth-child(even) {
+    transform: translateY(-238px);
+}
+
+.projects__item_full {
+    width: 100%;
+}
+
 .projects_image {
     height: 620px;
     display: flex;
@@ -35,6 +62,7 @@
 
 .projects__info {
     padding: 40px 32px;
+    background-color: #181823;
 }
 
 .projects__item_title {
